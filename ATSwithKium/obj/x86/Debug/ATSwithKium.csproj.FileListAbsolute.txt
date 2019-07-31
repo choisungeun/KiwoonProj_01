@@ -1,0 +1,10 @@
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\Interop.KHOpenAPILib.dll
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\AxInterop.KHOpenAPILib.dll
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\ATSwithKium.csproj.ResolveComReference.cache
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\ATSwithKium.ChartSelect.resources
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\ATSwithKium.Form1.resources
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\ATSwithKium.Form2.resources
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\ATSwithKium.JongMokSearch.resources
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\ATSwithKium.Properties.Resources.resources
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\ATSwithKium.csproj.GenerateResource.cache
+C:\Users\SGSRHOME\Source\Repos\ATS\ATSwithKium\ATSwithKium\obj\x86\Debug\ATSwithKium.csproj.CoreCompileInputs.cache
