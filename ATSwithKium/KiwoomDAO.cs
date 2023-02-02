@@ -23,7 +23,7 @@ namespace ATSwithKium
         public static DataSet getDataforJMname(string jmCodeData)
         {
             DataSet tempDataSet = new DataSet();
-            string queryString = "SELECT JONGMOK_CD, JONGMOK_NM, MARKET_NM FROM JONGMOK_LIST WHERE JONGMOK_NM LIKE '" + jmCodeData + "%'";
+            string queryString = "SELECT JONGMOK_CD, JONGMOK_NM, MARKET_NM FROM JONGMOK_LIST WHERE JONGMOK_NM LIKE '" + jmCodeData + "%' AND MARKET_CD IN ('0','10')";
             LogWrite.SqlLog("BtnJMCodeSeach_Click : [" + queryString + "]");
 
             using (SQLiteConnection connection = new SQLiteConnection(_sqlitConn))
@@ -64,20 +64,32 @@ namespace ATSwithKium
             using (SQLiteConnection connection = new SQLiteConnection(_sqlitConn))
             {
                 SQLiteCommand command = new SQLiteCommand(queryString, connection);
-                connection.Open();
-
-                using (SQLiteDataReader reader = command.ExecuteReader())
+                try
                 {
-                    while (reader.Read())
+                    connection.Open();
+
+                    using (SQLiteDataReader reader = command.ExecuteReader())
                     {
-                        list.Add(reader.GetString(0), reader.GetString(1));
+                        while (reader.Read())
+                        {
+                            list.Add(reader.GetString(0), reader.GetString(1));
+                        }
                     }
+
+                    LogWrite.SqlLog(queryString);
+
                 }
-
-                LogWrite.SqlLog(queryString);
-
-                connection.Close();
-            }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    LogWrite.OraError(ex.Message);
+                }
+                finally
+                {
+                    LogWrite.SqlLog("[" + queryString + "]");
+                    connection.Close();
+                }
+            }            
             return list;
         }
 
