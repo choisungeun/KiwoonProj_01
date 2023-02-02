@@ -201,7 +201,7 @@
   <ItemGroup>
     <None Include="aa.jpg" />
     <Content Include="SQLite.Interop.dll" />
-    <Content Include="TextFile1.txt" />
+    <Content Include="SQLDDL.txt" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
